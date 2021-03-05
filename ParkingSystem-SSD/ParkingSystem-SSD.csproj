@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{638518A8-C135-46AE-8649-281A1D0C2F47}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ParkingSystem_SSD</RootNamespace>
+    <AssemblyName>ParkingSystem-SSD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ICON.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\OneDrive\Documents\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=1.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.1.1.2\lib\net451\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.5.1.2\lib\net451\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.1.2\lib\net451\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Twilio, Version=5.53.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.5.53.0\lib\net451\Twilio.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectionString.cs" />
+    <Compile Include="FrmSSD-ApproveRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSSD-ApproveRegistration.Designer.cs">
+      <DependentUpon>FrmSSD-ApproveRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGuest-AddVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuest-AddVehicle.Designer.cs">
+      <DependentUpon>FrmGuest-AddVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGuest-Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuest-Login.Designer.cs">
+      <DependentUpon>FrmGuest-Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGuest-Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuest-Menu.Designer.cs">
+      <DependentUpon>FrmGuest-Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGuest-Records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuest-Records.Designer.cs">
+      <DependentUpon>FrmGuest-Records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGuest-Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuest-Register.Designer.cs">
+      <DependentUpon>FrmGuest-Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGuest-RegisteredVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuest-RegisteredVehicle.Designer.cs">
+      <DependentUpon>FrmGuest-RegisteredVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSG-Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSG-Menu.Designer.cs">
+      <DependentUpon>FrmSG-Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSG-Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSG-Login.Designer.cs">
+      <DependentUpon>FrmSG-Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSG-Records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSG-Records.Designer.cs">
+      <DependentUpon>FrmSG-Records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSG-SearchAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSG-SearchAccount.Designer.cs">
+      <DependentUpon>FrmSG-SearchAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSSD-Accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSSD-Accounts.Designer.cs">
+      <DependentUpon>FrmSSD-Accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSSD-Activate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSSD-Activate.Designer.cs">
+      <DependentUpon>FrmSSD-Activate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSSD-DeliverSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSSD-DeliverSMS.Designer.cs">
+      <DependentUpon>FrmSSD-DeliverSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSSD-DisplayImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSSD-DisplayImage.Designer.cs">
+      <DependentUpon>FrmSSD-DisplayImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSSD-Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSSD-Login.Designer.cs">
+      <DependentUpon>FrmSSD-Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBRRJL-MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBRRJL-MainMenu.Designer.cs">
+      <DependentUpon>FrmBRRJL-MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSSD-Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSSD-Menu.Designer.cs">
+      <DependentUpon>FrmSSD-Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSSD-RegisterSecurityGuard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSSD-RegisterSecurityGuard.Designer.cs">
+      <DependentUpon>FrmSSD-RegisterSecurityGuard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSSD-SendSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSSD-SendSMS.Designer.cs">
+      <DependentUpon>FrmSSD-SendSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSSD-Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSSD-Update.Designer.cs">
+      <DependentUpon>FrmSSD-Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSSD-Viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSSD-Viewer.Designer.cs">
+      <DependentUpon>FrmSSD-Viewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSSD-ViewRequirements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSSD-ViewRequirements.Designer.cs">
+      <DependentUpon>FrmSSD-ViewRequirements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmGuest-AddVehicle.resx">
+      <DependentUpon>FrmGuest-AddVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGuest-Login.resx">
+      <DependentUpon>FrmGuest-Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGuest-Menu.resx">
+      <DependentUpon>FrmGuest-Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGuest-Records.resx">
+      <DependentUpon>FrmGuest-Records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGuest-Register.resx">
+      <DependentUpon>FrmGuest-Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGuest-RegisteredVehicle.resx">
+      <DependentUpon>FrmGuest-RegisteredVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSG-Menu.resx">
+      <DependentUpon>FrmSG-Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSG-Login.resx">
+      <DependentUpon>FrmSG-Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSG-Records.resx">
+      <DependentUpon>FrmSG-Records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSG-SearchAccount.resx">
+      <DependentUpon>FrmSG-SearchAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSSD-Accounts.resx">
+      <DependentUpon>FrmSSD-Accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSSD-Activate.resx">
+      <DependentUpon>FrmSSD-Activate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSSD-ApproveRegistration.resx">
+      <DependentUpon>FrmSSD-ApproveRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSSD-DeliverSMS.resx">
+      <DependentUpon>FrmSSD-DeliverSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSSD-DisplayImage.resx">
+      <DependentUpon>FrmSSD-DisplayImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSSD-Login.resx">
+      <DependentUpon>FrmSSD-Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBRRJL-MainMenu.resx">
+      <DependentUpon>FrmBRRJL-MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSSD-Menu.resx">
+      <DependentUpon>FrmSSD-Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSSD-RegisterSecurityGuard.resx">
+      <DependentUpon>FrmSSD-RegisterSecurityGuard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSSD-SendSMS.resx">
+      <DependentUpon>FrmSSD-SendSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSSD-Update.resx">
+      <DependentUpon>FrmSSD-Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSSD-Viewer.resx">
+      <DependentUpon>FrmSSD-Viewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSSD-ViewRequirements.resx">
+      <DependentUpon>FrmSSD-ViewRequirements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICON.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

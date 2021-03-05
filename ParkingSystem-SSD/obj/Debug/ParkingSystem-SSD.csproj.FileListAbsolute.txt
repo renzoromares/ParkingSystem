@@ -1,0 +1,87 @@
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\ParkingSystem-SSD.exe.config
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\ParkingSystem-SSD.exe
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\ParkingSystem-SSD.pdb
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmMenu.resources
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.Properties.Resources.resources
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.csproj.GenerateResource.cache
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.csproj.CoreCompileInputs.cache
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.csproj.CopyComplete
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.exe
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.pdb
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmActivate.resources
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmViewRequirements.resources
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.csprojAssemblyReference.cache
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmAccounts.resources
+C:\Users\enzon\source\repos\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmUpdate.resources
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\ParkingSystem-SSD.exe.config
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\ParkingSystem-SSD.exe
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\ParkingSystem-SSD.pdb
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.csprojAssemblyReference.cache
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmAccounts.resources
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmMenu.resources
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmActivate.resources
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmUpdate.resources
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmViewRequirements.resources
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.Properties.Resources.resources
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.csproj.GenerateResource.cache
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.csproj.CoreCompileInputs.cache
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.csproj.CopyComplete
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.exe
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.pdb
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmDisplayImage.resources
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmViewer.resources
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmLogin.resources
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmRegisterSecurityGuard.resources
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmSendSMS.resources
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Microsoft.IdentityModel.Logging.dll
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Newtonsoft.Json.dll
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Twilio.dll
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Newtonsoft.Json.xml
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\Study Area\Project Design\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Twilio.xml
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\ParkingSystem-SSD.exe.config
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\ParkingSystem-SSD.exe
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\ParkingSystem-SSD.pdb
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Microsoft.IdentityModel.Logging.dll
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Newtonsoft.Json.dll
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Twilio.dll
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Newtonsoft.Json.xml
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\bin\Debug\Twilio.xml
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.csprojAssemblyReference.cache
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmAccounts.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmActivate.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmDisplayImage.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmMainMenu.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmRegisterSecurityGuard.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmSendSMS.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmUpdate.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmViewer.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmViewRequirements.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.Properties.Resources.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.csproj.GenerateResource.cache
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.csproj.CoreCompileInputs.cache
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.csproj.CopyComplete
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.exe
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem-SSD.pdb
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmGuest_AddVehicle.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmGuest_Login.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmGuest_Menu.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmGuest_Records.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmGuest_Register.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmGuest_RegisteredVehicle.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmSG_Menu.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmSG_Login.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmSG_Records.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmSG_SearchAccount.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmSSD_Menu.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmSSD_Login.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmSSD_DeliverSMS.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-SSD\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmSSD_ApproveRegistration.resources
