@@ -64,14 +64,14 @@ namespace ParkingSystem_SSD
             this.btnRegister.IconVisible = true;
             this.btnRegister.IconZoom = 90D;
             this.btnRegister.IsTab = false;
-            this.btnRegister.Location = new System.Drawing.Point(586, 270);
+            this.btnRegister.Location = new System.Drawing.Point(614, 270);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.btnRegister.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnRegister.OnHoverTextColor = System.Drawing.Color.White;
             this.btnRegister.selected = false;
             this.btnRegister.Size = new System.Drawing.Size(132, 38);
-            this.btnRegister.TabIndex = 62;
+            this.btnRegister.TabIndex = 9;
             this.btnRegister.Text = "Register";
             this.btnRegister.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRegister.Textcolor = System.Drawing.Color.White;
@@ -87,14 +87,14 @@ namespace ParkingSystem_SSD
             this.cmbVehicleType.Items = new string[] {
         "Car",
         "Motorcycle "};
-            this.cmbVehicleType.Location = new System.Drawing.Point(350, 43);
+            this.cmbVehicleType.Location = new System.Drawing.Point(378, 43);
             this.cmbVehicleType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbVehicleType.Name = "cmbVehicleType";
             this.cmbVehicleType.NomalColor = System.Drawing.Color.DarkGray;
             this.cmbVehicleType.onHoverColor = System.Drawing.Color.DarkGray;
             this.cmbVehicleType.selectedIndex = -1;
             this.cmbVehicleType.Size = new System.Drawing.Size(255, 27);
-            this.cmbVehicleType.TabIndex = 61;
+            this.cmbVehicleType.TabIndex = 5;
             // 
             // txtCarmake
             // 
@@ -108,11 +108,11 @@ namespace ParkingSystem_SSD
             this.txtCarmake.LineIdleColor = System.Drawing.Color.Gray;
             this.txtCarmake.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.txtCarmake.LineThickness = 3;
-            this.txtCarmake.Location = new System.Drawing.Point(25, 130);
+            this.txtCarmake.Location = new System.Drawing.Point(53, 130);
             this.txtCarmake.Margin = new System.Windows.Forms.Padding(4);
             this.txtCarmake.Name = "txtCarmake";
             this.txtCarmake.Size = new System.Drawing.Size(255, 44);
-            this.txtCarmake.TabIndex = 60;
+            this.txtCarmake.TabIndex = 3;
             this.txtCarmake.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtVehicleModel
@@ -127,11 +127,11 @@ namespace ParkingSystem_SSD
             this.txtVehicleModel.LineIdleColor = System.Drawing.Color.Gray;
             this.txtVehicleModel.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.txtVehicleModel.LineThickness = 3;
-            this.txtVehicleModel.Location = new System.Drawing.Point(25, 78);
+            this.txtVehicleModel.Location = new System.Drawing.Point(53, 78);
             this.txtVehicleModel.Margin = new System.Windows.Forms.Padding(4);
             this.txtVehicleModel.Name = "txtVehicleModel";
             this.txtVehicleModel.Size = new System.Drawing.Size(255, 44);
-            this.txtVehicleModel.TabIndex = 52;
+            this.txtVehicleModel.TabIndex = 2;
             this.txtVehicleModel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtVehicleColor
@@ -146,11 +146,11 @@ namespace ParkingSystem_SSD
             this.txtVehicleColor.LineIdleColor = System.Drawing.Color.Gray;
             this.txtVehicleColor.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.txtVehicleColor.LineThickness = 3;
-            this.txtVehicleColor.Location = new System.Drawing.Point(25, 182);
+            this.txtVehicleColor.Location = new System.Drawing.Point(53, 182);
             this.txtVehicleColor.Margin = new System.Windows.Forms.Padding(4);
             this.txtVehicleColor.Name = "txtVehicleColor";
             this.txtVehicleColor.Size = new System.Drawing.Size(255, 44);
-            this.txtVehicleColor.TabIndex = 54;
+            this.txtVehicleColor.TabIndex = 4;
             this.txtVehicleColor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // btnAddFace
@@ -175,14 +175,14 @@ namespace ParkingSystem_SSD
             this.btnAddFace.IconVisible = true;
             this.btnAddFace.IconZoom = 90D;
             this.btnAddFace.IsTab = false;
-            this.btnAddFace.Location = new System.Drawing.Point(626, 93);
+            this.btnAddFace.Location = new System.Drawing.Point(654, 93);
             this.btnAddFace.Name = "btnAddFace";
             this.btnAddFace.Normalcolor = System.Drawing.Color.Gray;
             this.btnAddFace.OnHovercolor = System.Drawing.Color.Gray;
             this.btnAddFace.OnHoverTextColor = System.Drawing.Color.Black;
             this.btnAddFace.selected = false;
             this.btnAddFace.Size = new System.Drawing.Size(92, 29);
-            this.btnAddFace.TabIndex = 59;
+            this.btnAddFace.TabIndex = 6;
             this.btnAddFace.Text = "Add File";
             this.btnAddFace.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAddFace.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
@@ -202,11 +202,11 @@ namespace ParkingSystem_SSD
             this.txtFaceImage.LineIdleColor = System.Drawing.Color.Gray;
             this.txtFaceImage.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.txtFaceImage.LineThickness = 3;
-            this.txtFaceImage.Location = new System.Drawing.Point(350, 78);
+            this.txtFaceImage.Location = new System.Drawing.Point(378, 78);
             this.txtFaceImage.Margin = new System.Windows.Forms.Padding(4);
             this.txtFaceImage.Name = "txtFaceImage";
             this.txtFaceImage.Size = new System.Drawing.Size(255, 44);
-            this.txtFaceImage.TabIndex = 58;
+            this.txtFaceImage.TabIndex = 5;
             this.txtFaceImage.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // btnAddFileCR
@@ -231,14 +231,14 @@ namespace ParkingSystem_SSD
             this.btnAddFileCR.IconVisible = true;
             this.btnAddFileCR.IconZoom = 90D;
             this.btnAddFileCR.IsTab = false;
-            this.btnAddFileCR.Location = new System.Drawing.Point(626, 197);
+            this.btnAddFileCR.Location = new System.Drawing.Point(654, 197);
             this.btnAddFileCR.Name = "btnAddFileCR";
             this.btnAddFileCR.Normalcolor = System.Drawing.Color.Gray;
             this.btnAddFileCR.OnHovercolor = System.Drawing.Color.Gray;
             this.btnAddFileCR.OnHoverTextColor = System.Drawing.Color.Black;
             this.btnAddFileCR.selected = false;
             this.btnAddFileCR.Size = new System.Drawing.Size(92, 29);
-            this.btnAddFileCR.TabIndex = 57;
+            this.btnAddFileCR.TabIndex = 8;
             this.btnAddFileCR.Text = "Add File";
             this.btnAddFileCR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAddFileCR.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
@@ -267,14 +267,14 @@ namespace ParkingSystem_SSD
             this.btnAddFileOR.IconVisible = true;
             this.btnAddFileOR.IconZoom = 90D;
             this.btnAddFileOR.IsTab = false;
-            this.btnAddFileOR.Location = new System.Drawing.Point(626, 145);
+            this.btnAddFileOR.Location = new System.Drawing.Point(654, 145);
             this.btnAddFileOR.Name = "btnAddFileOR";
             this.btnAddFileOR.Normalcolor = System.Drawing.Color.Gray;
             this.btnAddFileOR.OnHovercolor = System.Drawing.Color.Gray;
             this.btnAddFileOR.OnHoverTextColor = System.Drawing.Color.Black;
             this.btnAddFileOR.selected = false;
             this.btnAddFileOR.Size = new System.Drawing.Size(92, 29);
-            this.btnAddFileOR.TabIndex = 56;
+            this.btnAddFileOR.TabIndex = 7;
             this.btnAddFileOR.Text = "Add File";
             this.btnAddFileOR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAddFileOR.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
@@ -293,11 +293,11 @@ namespace ParkingSystem_SSD
             this.txtPlateNumber.LineIdleColor = System.Drawing.Color.Gray;
             this.txtPlateNumber.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.txtPlateNumber.LineThickness = 3;
-            this.txtPlateNumber.Location = new System.Drawing.Point(25, 26);
+            this.txtPlateNumber.Location = new System.Drawing.Point(53, 26);
             this.txtPlateNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtPlateNumber.Name = "txtPlateNumber";
             this.txtPlateNumber.Size = new System.Drawing.Size(255, 44);
-            this.txtPlateNumber.TabIndex = 51;
+            this.txtPlateNumber.TabIndex = 1;
             this.txtPlateNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtOfficialReceipt
@@ -313,7 +313,7 @@ namespace ParkingSystem_SSD
             this.txtOfficialReceipt.LineIdleColor = System.Drawing.Color.Gray;
             this.txtOfficialReceipt.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.txtOfficialReceipt.LineThickness = 3;
-            this.txtOfficialReceipt.Location = new System.Drawing.Point(350, 130);
+            this.txtOfficialReceipt.Location = new System.Drawing.Point(378, 130);
             this.txtOfficialReceipt.Margin = new System.Windows.Forms.Padding(4);
             this.txtOfficialReceipt.Name = "txtOfficialReceipt";
             this.txtOfficialReceipt.Size = new System.Drawing.Size(255, 44);
@@ -333,7 +333,7 @@ namespace ParkingSystem_SSD
             this.txtCR.LineIdleColor = System.Drawing.Color.Gray;
             this.txtCR.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.txtCR.LineThickness = 3;
-            this.txtCR.Location = new System.Drawing.Point(350, 182);
+            this.txtCR.Location = new System.Drawing.Point(378, 182);
             this.txtCR.Margin = new System.Windows.Forms.Padding(4);
             this.txtCR.Name = "txtCR";
             this.txtCR.Size = new System.Drawing.Size(255, 44);
@@ -344,7 +344,7 @@ namespace ParkingSystem_SSD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 498);
+            this.ClientSize = new System.Drawing.Size(866, 582);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.cmbVehicleType);
             this.Controls.Add(this.txtCarmake);

@@ -31,10 +31,9 @@ namespace ParkingSystem_SSD
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(247, 199, 195);
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Blue;
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 9);
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(237, 236, 254);
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
+            dataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 8);
 
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -42,11 +41,13 @@ namespace ParkingSystem_SSD
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dataGridView1.AllowUserToResizeRows = false;
             dataGridView1.ColumnHeadersHeight = 50;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9);
             dataGridView1.RowHeadersVisible = false;
         }
 
         public void loadRegisteredVehicle()
         {
+            dataGridView1.Rows.Clear();
             using (SqlConnection conn = new SqlConnection(ConnectionString.connect))
             {
                 string query = "SELECT PlateID" +
@@ -54,6 +55,9 @@ namespace ParkingSystem_SSD
                                     ",Vehicle_Model" +
                                     ",Vehicle_Carmake" +
                                     ",Vehicle_Color" +
+                                    ",Time_Submitted" +
+                                    ",Time_Approved" +
+                                    ",Time_Due" +
                                     ",Status From CREDENTIALS WHERE Id_Number = '" + User.ownerID + "'";
                 conn.Open();
                 try
@@ -61,15 +65,14 @@ namespace ParkingSystem_SSD
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         SqlDataReader dr = cmd.ExecuteReader();
-                        dataGridView1.Rows.Clear();
                         int i = 0;
                         while (dr.Read())
                         {
                             i++;
-                            int temp = Convert.ToInt32(dr[5].ToString());
-                            string status = dr[5].ToString();
+
+                            string status = dr[8].ToString();
                             string result = messageStatus(status);
-                            dataGridView1.Rows.Add(i, dr[0].ToString().ToUpper(), dr[1].ToString().ToUpper(), dr[2].ToString().ToUpper(), dr[3].ToString().ToUpper(), dr[4].ToString().ToUpper(), result);
+                            dataGridView1.Rows.Add(i, dr[0].ToString().ToUpper(), dr[1].ToString(), dr[2].ToString().ToUpper(), dr[3].ToString().ToUpper(), dr[4].ToString().ToUpper(), dr[5].ToString(), dr[6].ToString(),dr[7].ToString(),result);
                         }
                         dr.Close();
                     }
@@ -92,13 +95,22 @@ namespace ParkingSystem_SSD
             }
             else if (string.Equals(status, "1"))
             {
-                status = "ALLOWED ENTRY";
+                status = "Allowed Entry";
             }
             else if (string.Equals(status, "2"))
             {
-                status = "NOT ALLOWED ENTRY";
+                status = "Not Allowed Entry";
+            }
+            else if (string.Equals(status, "3"))
+            {
+                status = "Expired";
             }
             return status;
+        }
+
+        private void lblActivate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

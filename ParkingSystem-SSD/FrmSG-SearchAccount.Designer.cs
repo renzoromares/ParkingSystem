@@ -291,7 +291,7 @@ namespace ParkingSystem_SSD
             this.pnlContainer.Controls.Add(this.pnlfooter);
             this.pnlContainer.Controls.Add(this.panel2);
             this.pnlContainer.Controls.Add(this.pictureBox1);
-            this.pnlContainer.Location = new System.Drawing.Point(220, 96);
+            this.pnlContainer.Location = new System.Drawing.Point(295, 96);
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(328, 417);
             this.pnlContainer.TabIndex = 23;
@@ -362,7 +362,7 @@ namespace ParkingSystem_SSD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 537);
+            this.ClientSize = new System.Drawing.Size(865, 545);
             this.Controls.Add(this.txtPlateNumber);
             this.Controls.Add(this.pnlContainer);
             this.Controls.Add(this.btnSearch);

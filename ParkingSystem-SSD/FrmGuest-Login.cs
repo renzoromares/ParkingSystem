@@ -82,11 +82,11 @@ namespace ParkingSystem_SSD
                                 }
                                 else if(string.Equals(reader.GetValue(7).ToString(), "0"))
                                 {
-                                    MessageBox.Show("Your registration is still pending!\nPlease contact your administrator");
+                                    MessageBox.Show("Account application Pending!");
                                 }
                                 else if (string.Equals(reader.GetValue(7).ToString(), "2"))
                                 {
-                                    MessageBox.Show("Your registration is disapproved!\nPlease contact your administrator");
+                                    MessageBox.Show("Account application Disapproved!");
                                 }
 
                             }

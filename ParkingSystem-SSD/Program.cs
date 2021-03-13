@@ -19,7 +19,7 @@ namespace ParkingSystem_SSD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMainMenu());
+            Application.Run(new FrmSG_ParkingSpace());
         }
     }
 }

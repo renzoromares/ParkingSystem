@@ -33,7 +33,6 @@ namespace ParkingSystem_SSD
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(247, 199, 195);
             dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Blue;
-            dataGridView1.BackgroundColor = Color.White;
             dataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 9);
 
             dataGridView1.EnableHeadersVisualStyles = false;

@@ -70,11 +70,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionString.cs" />
-    <Compile Include="FrmSSD-ApproveRegistration.cs">
+    <Compile Include="FrmGuest-UpdateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSSD-ApproveRegistration.Designer.cs">
-      <DependentUpon>FrmSSD-ApproveRegistration.cs</DependentUpon>
+    <Compile Include="FrmGuest-UpdateAccount.Designer.cs">
+      <DependentUpon>FrmGuest-UpdateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGuest-UpdateVehiclePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuest-UpdateVehiclePass.Designer.cs">
+      <DependentUpon>FrmGuest-UpdateVehiclePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSG-ParkingSpace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSG-ParkingSpace.Designer.cs">
+      <DependentUpon>FrmSG-ParkingSpace.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmGuest-AddVehicle.cs">
       <SubType>Form</SubType>
@@ -142,11 +154,11 @@
     <Compile Include="FrmSSD-Accounts.Designer.cs">
       <DependentUpon>FrmSSD-Accounts.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSSD-Activate.cs">
+    <Compile Include="FrmSSD-Approve Vehicles.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSSD-Activate.Designer.cs">
-      <DependentUpon>FrmSSD-Activate.cs</DependentUpon>
+    <Compile Include="FrmSSD-Approve Vehicles.Designer.cs">
+      <DependentUpon>FrmSSD-Approve Vehicles.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSSD-DeliverSMS.cs">
       <SubType>Form</SubType>
@@ -184,17 +196,23 @@
     <Compile Include="FrmSSD-RegisterSecurityGuard.Designer.cs">
       <DependentUpon>FrmSSD-RegisterSecurityGuard.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSSD-SendSMS.cs">
+    <Compile Include="FrmSSD-CreateSMS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSSD-SendSMS.Designer.cs">
-      <DependentUpon>FrmSSD-SendSMS.cs</DependentUpon>
+    <Compile Include="FrmSSD-CreateSMS.Designer.cs">
+      <DependentUpon>FrmSSD-CreateSMS.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSSD-Update.cs">
+    <Compile Include="FrmSSD-UpdateVehiclePass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSSD-Update.Designer.cs">
-      <DependentUpon>FrmSSD-Update.cs</DependentUpon>
+    <Compile Include="FrmSSD-UpdateVehiclePass.Designer.cs">
+      <DependentUpon>FrmSSD-UpdateVehiclePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSSD-UpdateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSSD-UpdateAccount.Designer.cs">
+      <DependentUpon>FrmSSD-UpdateAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSSD-Viewer.cs">
       <SubType>Form</SubType>
@@ -229,11 +247,20 @@
     <EmbeddedResource Include="FrmGuest-RegisteredVehicle.resx">
       <DependentUpon>FrmGuest-RegisteredVehicle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmGuest-UpdateAccount.resx">
+      <DependentUpon>FrmGuest-UpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGuest-UpdateVehiclePass.resx">
+      <DependentUpon>FrmGuest-UpdateVehiclePass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmSG-Menu.resx">
       <DependentUpon>FrmSG-Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSG-Login.resx">
       <DependentUpon>FrmSG-Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSG-ParkingSpace.resx">
+      <DependentUpon>FrmSG-ParkingSpace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSG-Records.resx">
       <DependentUpon>FrmSG-Records.cs</DependentUpon>
@@ -244,11 +271,8 @@
     <EmbeddedResource Include="FrmSSD-Accounts.resx">
       <DependentUpon>FrmSSD-Accounts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSSD-Activate.resx">
-      <DependentUpon>FrmSSD-Activate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmSSD-ApproveRegistration.resx">
-      <DependentUpon>FrmSSD-ApproveRegistration.cs</DependentUpon>
+    <EmbeddedResource Include="FrmSSD-Approve Vehicles.resx">
+      <DependentUpon>FrmSSD-Approve Vehicles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSSD-DeliverSMS.resx">
       <DependentUpon>FrmSSD-DeliverSMS.cs</DependentUpon>
@@ -268,11 +292,14 @@
     <EmbeddedResource Include="FrmSSD-RegisterSecurityGuard.resx">
       <DependentUpon>FrmSSD-RegisterSecurityGuard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSSD-SendSMS.resx">
-      <DependentUpon>FrmSSD-SendSMS.cs</DependentUpon>
+    <EmbeddedResource Include="FrmSSD-CreateSMS.resx">
+      <DependentUpon>FrmSSD-CreateSMS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSSD-Update.resx">
-      <DependentUpon>FrmSSD-Update.cs</DependentUpon>
+    <EmbeddedResource Include="FrmSSD-UpdateVehiclePass.resx">
+      <DependentUpon>FrmSSD-UpdateVehiclePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSSD-UpdateAccount.resx">
+      <DependentUpon>FrmSSD-UpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSSD-Viewer.resx">
       <DependentUpon>FrmSSD-Viewer.cs</DependentUpon>

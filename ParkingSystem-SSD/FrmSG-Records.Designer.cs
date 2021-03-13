@@ -55,7 +55,7 @@ namespace ParkingSystem_SSD
             this.Column7});
             this.dataGridView1.Location = new System.Drawing.Point(12, 114);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(747, 411);
+            this.dataGridView1.Size = new System.Drawing.Size(841, 419);
             this.dataGridView1.TabIndex = 4;
             // 
             // Column1
@@ -100,7 +100,7 @@ namespace ParkingSystem_SSD
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(559, 88);
+            this.dateTimePicker1.Location = new System.Drawing.Point(653, 88);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 5;
@@ -112,7 +112,7 @@ namespace ParkingSystem_SSD
             this.lblheader1.AutoSize = true;
             this.lblheader1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblheader1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblheader1.Location = new System.Drawing.Point(234, 32);
+            this.lblheader1.Location = new System.Drawing.Point(262, 32);
             this.lblheader1.Name = "lblheader1";
             this.lblheader1.Size = new System.Drawing.Size(75, 28);
             this.lblheader1.TabIndex = 28;
@@ -123,7 +123,7 @@ namespace ParkingSystem_SSD
             this.lblheader2.AutoSize = true;
             this.lblheader2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblheader2.ForeColor = System.Drawing.Color.Black;
-            this.lblheader2.Location = new System.Drawing.Point(304, 32);
+            this.lblheader2.Location = new System.Drawing.Point(343, 32);
             this.lblheader2.Name = "lblheader2";
             this.lblheader2.Size = new System.Drawing.Size(221, 28);
             this.lblheader2.TabIndex = 29;
@@ -133,7 +133,7 @@ namespace ParkingSystem_SSD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 537);
+            this.ClientSize = new System.Drawing.Size(865, 545);
             this.Controls.Add(this.lblheader2);
             this.Controls.Add(this.lblheader1);
             this.Controls.Add(this.dataGridView1);

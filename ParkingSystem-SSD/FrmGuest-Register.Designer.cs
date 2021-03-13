@@ -42,12 +42,15 @@ namespace ParkingSystem_SSD
             this.txtIdNumber = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtConfirmPass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtfname = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblStatus);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -59,11 +62,11 @@ namespace ParkingSystem_SSD
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.Color.White;
-            this.lblStatus.Location = new System.Drawing.Point(71, 20);
+            this.lblStatus.Location = new System.Drawing.Point(174, 18);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(429, 25);
+            this.lblStatus.Size = new System.Drawing.Size(381, 25);
             this.lblStatus.TabIndex = 2;
-            this.lblStatus.Text = "USJR PARKING MANAGEMENT - REGISTRATION";
+            this.lblStatus.Text = "PARKING MANAGEMENT - REGISTRATION";
             // 
             // btnClose
             // 
@@ -71,7 +74,7 @@ namespace ParkingSystem_SSD
             this.btnClose.BackColor = System.Drawing.Color.Gray;
             this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnClose.BorderRadius = 0;
-            this.btnClose.ButtonText = "Close";
+            this.btnClose.ButtonText = "Back";
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.DisabledColor = System.Drawing.Color.Gray;
             this.btnClose.Iconcolor = System.Drawing.Color.Transparent;
@@ -94,7 +97,7 @@ namespace ParkingSystem_SSD
             this.btnClose.selected = false;
             this.btnClose.Size = new System.Drawing.Size(132, 38);
             this.btnClose.TabIndex = 57;
-            this.btnClose.Text = "Close";
+            this.btnClose.Text = "Back";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnClose.Textcolor = System.Drawing.Color.White;
             this.btnClose.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -317,11 +320,33 @@ namespace ParkingSystem_SSD
             this.txtfname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtfname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtfname_KeyPress);
             // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.ForeColor = System.Drawing.Color.Red;
+            this.label.Location = new System.Drawing.Point(49, 341);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(234, 13);
+            this.label.TabIndex = 58;
+            this.label.Text = "*Please input valid phone number for verification";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.Location = new System.Drawing.Point(113, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "USJ-R";
+            // 
             // FrmGuest_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(712, 537);
+            this.Controls.Add(this.label);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnRegister);
@@ -342,6 +367,7 @@ namespace ParkingSystem_SSD
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -360,5 +386,7 @@ namespace ParkingSystem_SSD
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtIdNumber;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtConfirmPass;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtfname;
+        private Bunifu.Framework.UI.BunifuCustomLabel label;
+        private System.Windows.Forms.Label label1;
     }
 }

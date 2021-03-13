@@ -27,6 +27,8 @@ namespace ParkingSystem_SSD
         private void btnRegister_Click(object sender, EventArgs e)
         {
             verifyRegistration();
+           
+
         }
 
         private void verifyRegistration()
@@ -41,8 +43,8 @@ namespace ParkingSystem_SSD
                     if (isDuplicateID == true)
                     {
                         save2Registration();
-                        MessageBox.Show("Registration Successful!");
                         refresh();
+                        
                     }
                     else
                     {
@@ -159,7 +161,18 @@ namespace ParkingSystem_SSD
             txtPassword.Text = "";
             txtConfirmPass.Text = "";
             cmbPosition.selectedIndex = -1;
+           
         }
+
+        private void back()
+        {
+            MessageBox.Show("Registration Successful!");
+            MessageBox.Show("A text message will be send to your phone number after the\n SSD verify your account.");
+            Visible = false;
+            FrmGuest_Login login = new FrmGuest_Login();
+            login.Show();
+        }
+
 
         private void save2Registration()
         {
@@ -176,7 +189,9 @@ namespace ParkingSystem_SSD
                                                                    "@Contacts," +
                                                                    "@Department," +
                                                                    "@Password," +
-                                                                   "@Status)";
+                                                                   "@Status," +
+                                                                   "@Time_Submitted," +
+                                                                   "@Time_Approved)";
 
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -190,11 +205,14 @@ namespace ParkingSystem_SSD
                         cmd.Parameters.AddWithValue("@Department", txtDepartment.Text);
                         cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
                         cmd.Parameters.AddWithValue("@Status", 0);
+                        cmd.Parameters.AddWithValue("@Time_Submitted", DateTime.Now.ToShortDateString());
+                        cmd.Parameters.AddWithValue("@Time_Approved", "");
 
                         cmd.ExecuteNonQuery();
                         conn.Close();
-
+                        back();
                     }
+
 
                 }
                 catch (SqlException ex)

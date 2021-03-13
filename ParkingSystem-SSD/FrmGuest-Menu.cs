@@ -51,6 +51,41 @@ namespace ParkingSystem_SSD
             login.Show();
         }
 
-       
+        private void FrmGuest_Menu_Load(object sender, EventArgs e)
+        {
+            panelUpdate.Size = new Size(173, 54);
+            lblVehicleOwner.Text = User.fullName;
+            lblPhone.Text = User.phone;
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (panelUpdate.Height == 54)
+            {
+                panelUpdate.Height = 92;
+            }
+            else if (panelUpdate.Height == 92)
+            {
+                panelUpdate.Height = 54;
+            }
+        }
+
+        private void btnUpdateAccounts_Click(object sender, EventArgs e)
+        {
+            FrmGuest_UpdateAccount updateAccount = new FrmGuest_UpdateAccount();
+            mainPanel.Controls.Clear();
+            updateAccount.TopLevel = false;
+            mainPanel.Controls.Add(updateAccount);
+            updateAccount.Show();
+        }
+
+        private void btnUpdateVehiclePass_Click(object sender, EventArgs e) /*For APPROVEVAL*/
+        {
+            /*FrmGuest_UpdateVehiclePass updateVehiclePass = new FrmGuest_UpdateVehiclePass();
+            mainPanel.Controls.Clear();
+            updateVehiclePass.TopLevel = false;
+            mainPanel.Controls.Add(updateVehiclePass);
+            updateVehiclePass.Show(); */
+        }
     }
 }

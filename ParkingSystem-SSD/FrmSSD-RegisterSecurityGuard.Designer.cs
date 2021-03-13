@@ -48,7 +48,7 @@
             this.txtlname.LineIdleColor = System.Drawing.Color.Gray;
             this.txtlname.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.txtlname.LineThickness = 3;
-            this.txtlname.Location = new System.Drawing.Point(36, 135);
+            this.txtlname.Location = new System.Drawing.Point(64, 136);
             this.txtlname.Margin = new System.Windows.Forms.Padding(4);
             this.txtlname.Name = "txtlname";
             this.txtlname.Size = new System.Drawing.Size(255, 44);
@@ -67,7 +67,7 @@
             this.txtPassword.LineIdleColor = System.Drawing.Color.Gray;
             this.txtPassword.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.txtPassword.LineThickness = 3;
-            this.txtPassword.Location = new System.Drawing.Point(326, 31);
+            this.txtPassword.Location = new System.Drawing.Point(425, 32);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(255, 44);
@@ -87,7 +87,7 @@
             this.txtUsername.LineIdleColor = System.Drawing.Color.Gray;
             this.txtUsername.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.txtUsername.LineThickness = 3;
-            this.txtUsername.Location = new System.Drawing.Point(36, 31);
+            this.txtUsername.Location = new System.Drawing.Point(64, 32);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(255, 44);
@@ -106,7 +106,7 @@
             this.txtConfirmPass.LineIdleColor = System.Drawing.Color.Gray;
             this.txtConfirmPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.txtConfirmPass.LineThickness = 3;
-            this.txtConfirmPass.Location = new System.Drawing.Point(326, 83);
+            this.txtConfirmPass.Location = new System.Drawing.Point(425, 84);
             this.txtConfirmPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtConfirmPass.Name = "txtConfirmPass";
             this.txtConfirmPass.Size = new System.Drawing.Size(255, 44);
@@ -126,7 +126,7 @@
             this.txtfname.LineIdleColor = System.Drawing.Color.Gray;
             this.txtfname.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.txtfname.LineThickness = 3;
-            this.txtfname.Location = new System.Drawing.Point(36, 83);
+            this.txtfname.Location = new System.Drawing.Point(64, 84);
             this.txtfname.Margin = new System.Windows.Forms.Padding(4);
             this.txtfname.Name = "txtfname";
             this.txtfname.Size = new System.Drawing.Size(255, 44);
@@ -154,7 +154,7 @@
             this.btnRegister.IconVisible = true;
             this.btnRegister.IconZoom = 90D;
             this.btnRegister.IsTab = false;
-            this.btnRegister.Location = new System.Drawing.Point(612, 487);
+            this.btnRegister.Location = new System.Drawing.Point(548, 222);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.btnRegister.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -172,7 +172,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 537);
+            this.ClientSize = new System.Drawing.Size(865, 583);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.txtlname);
             this.Controls.Add(this.txtPassword);

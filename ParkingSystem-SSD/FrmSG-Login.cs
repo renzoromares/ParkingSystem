@@ -27,7 +27,7 @@ namespace ParkingSystem_SSD
         private void FrmSG_Login_Load(object sender, EventArgs e)
         {
             txtUsername.Text = "pabloescobar";
-            txtPassword.Text = "1234";
+            txtPassword.Text = "123";
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

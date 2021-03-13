@@ -102,7 +102,7 @@ namespace ParkingSystem_SSD
 
                 try
                 {
-                    string query = "SELECT * FROM cREDENTIALS WHERE PlateID = '" + txtPlateNumber.Text + "'  ";
+                    string query = "SELECT * FROM cREDENTIALS WHERE PlateID = '" + txtPlateNumber.Text.ToUpper() + "'  ";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         conn.Open();
@@ -193,6 +193,9 @@ namespace ParkingSystem_SSD
                                                                 "@Cert_Registration," +
                                                                 "@Face_Image," +
                                                                 "@Status," +
+                                                                "@Time_Submitted," +
+                                                                "@Time_Approved," +
+                                                                "@Time_Due," +
                                                                 "@Id_Number)";
 
 
@@ -220,7 +223,7 @@ namespace ParkingSystem_SSD
                         BinaryReader br2 = new BinaryReader(fs2);
                         img2 = br2.ReadBytes((int)fs2.Length);
 
-                        cmd.Parameters.AddWithValue("@PlateID", txtPlateNumber.Text);
+                        cmd.Parameters.AddWithValue("@PlateID", txtPlateNumber.Text.ToUpper());
                         cmd.Parameters.AddWithValue("@Vehicle_Type", cmbVehicleType.selectedValue.ToString());
                         cmd.Parameters.AddWithValue("@Vehicle_Model", txtVehicleModel.Text);
                         cmd.Parameters.AddWithValue("@Vehicle_Carmake", txtCarmake.Text);
@@ -229,6 +232,9 @@ namespace ParkingSystem_SSD
                         cmd.Parameters.AddWithValue("@Cert_Registration", img2);
                         cmd.Parameters.AddWithValue("@Face_Image", img);
                         cmd.Parameters.AddWithValue("@Status", 0);
+                        cmd.Parameters.AddWithValue("@Time_Submitted", DateTime.Now.ToShortDateString());
+                        cmd.Parameters.AddWithValue("@Time_Approved", "");
+                        cmd.Parameters.AddWithValue("@Time_Due", "");
                         cmd.Parameters.AddWithValue("@Id_Number", User.ownerID);
 
 

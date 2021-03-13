@@ -38,13 +38,14 @@ namespace ParkingSystem_SSD
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblActivate = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(559, 91);
+            this.dateTimePicker1.Location = new System.Drawing.Point(654, 91);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 14;
@@ -64,7 +65,7 @@ namespace ParkingSystem_SSD
             this.Column7});
             this.dataGridView1.Location = new System.Drawing.Point(12, 117);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(747, 377);
+            this.dataGridView1.Size = new System.Drawing.Size(842, 453);
             this.dataGridView1.TabIndex = 13;
             // 
             // Column1
@@ -110,17 +111,29 @@ namespace ParkingSystem_SSD
             // 
             this.lblActivate.AutoSize = true;
             this.lblActivate.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActivate.Location = new System.Drawing.Point(307, 39);
+            this.lblActivate.Location = new System.Drawing.Point(333, 39);
             this.lblActivate.Name = "lblActivate";
-            this.lblActivate.Size = new System.Drawing.Size(207, 28);
+            this.lblActivate.Size = new System.Drawing.Size(283, 28);
             this.lblActivate.TabIndex = 15;
-            this.lblActivate.Text = "VEHICLE HISTORY";
+            this.lblActivate.Text = "MANAGEMENT HISTORY";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(221, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 28);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "VEHICLE\r\n";
             // 
             // FrmGuest_Records
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 537);
+            this.ClientSize = new System.Drawing.Size(866, 582);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblActivate);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
@@ -146,5 +159,6 @@ namespace ParkingSystem_SSD
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.Label lblActivate;
+        private System.Windows.Forms.Label label1;
     }
 }

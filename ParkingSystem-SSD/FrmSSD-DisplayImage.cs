@@ -28,7 +28,28 @@ namespace ParkingSystem_SSD
 
         private void FrmDisplayImage_Load(object sender, EventArgs e)
         {
+            loadLabel();
             loadUserImage();
+            
+        }
+
+        private void loadLabel()
+        {
+            if(User.theOption == 5)
+            {
+                lblViewer.Text = "OFFICIAL RECEIPT";
+                lblAdd.Location = new Point(111, 18);
+                lblViewer.Location = new Point(203, 18);
+            }
+            else if (User.theOption == 6)
+            {
+                lblViewer.Text = "CERTIFICATE OF REGISTRATION";
+            }
+            else
+            {
+                lblViewer.Text = "REGISTERED FACE IMAGE";
+            }
+
         }
         private void loadUserImage()
         {

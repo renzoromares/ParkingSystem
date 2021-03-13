@@ -103,6 +103,8 @@ namespace ParkingSystem_SSD
             this.btnGuest.Text = "Guest";
             this.btnGuest.UseVisualStyleBackColor = false;
             this.btnGuest.Click += new System.EventHandler(this.btnGuest_Click);
+            this.btnGuest.MouseEnter += new System.EventHandler(this.btnGuest_MouseEnter);
+            this.btnGuest.MouseLeave += new System.EventHandler(this.btnGuest_MouseLeave);
             // 
             // btnSSD
             // 
@@ -120,6 +122,8 @@ namespace ParkingSystem_SSD
             this.btnSSD.Text = "SSD";
             this.btnSSD.UseVisualStyleBackColor = false;
             this.btnSSD.Click += new System.EventHandler(this.btnSSD_Click);
+            this.btnSSD.MouseEnter += new System.EventHandler(this.btnSSD_MouseEnter);
+            this.btnSSD.MouseLeave += new System.EventHandler(this.btnSSD_MouseLeave);
             // 
             // btnGuard
             // 
@@ -137,6 +141,8 @@ namespace ParkingSystem_SSD
             this.btnGuard.Text = "Guard";
             this.btnGuard.UseVisualStyleBackColor = false;
             this.btnGuard.Click += new System.EventHandler(this.btnGuard_Click);
+            this.btnGuard.MouseEnter += new System.EventHandler(this.btnGuard_MouseEnter);
+            this.btnGuard.MouseLeave += new System.EventHandler(this.btnGuard_MouseLeave);
             // 
             // FrmMainMenu
             // 
@@ -152,6 +158,7 @@ namespace ParkingSystem_SSD
             this.Name = "FrmMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMainMenu";
+            this.Load += new System.EventHandler(this.FrmMainMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

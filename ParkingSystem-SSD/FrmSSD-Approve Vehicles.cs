@@ -15,13 +15,11 @@ namespace ParkingSystem_SSD
     public partial class FrmActivate : Form
     {
 
-
+  
         public FrmActivate()
         {
             InitializeComponent();
         }
-
-
 
         private  void FrmActivate_Load(object sender, EventArgs e)
         {
@@ -38,36 +36,38 @@ namespace ParkingSystem_SSD
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(237, 236, 254);
             dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
-            dataGridView1.BackgroundColor = Color.White;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.Columns["Date_Submitted"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
 
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(2, 48, 15);
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10);
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9);
             dataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 8);
             dataGridView1.ColumnHeadersHeight = 80;
         }
 
         private void dataLoad()
         {
+            dataGridView1.Rows.Clear();
             using (SqlConnection conn = new SqlConnection(ConnectionString.connect))
             {
 
                 try
                 {
-                    
+
                     string query = "SELECT VEHICLE_OWNER.Id_Number" +
                                          ",VEHICLE_OWNER.FirstName" +
                                          ",VEHICLE_OWNER.LastName" +
                                          ",VEHICLE_OWNER.Position" +
-                                         ",CREDENTIALS.Vehicle_Type" +
-                                         ",CREDENTIALS.Status " +
-                                         ",CREDENTIALS.PlateID " + 
+                                         ",CREDENTIALS.Status" +
+                                         ",CREDENTIALS.PlateID" +
+                                         ",CREDENTIALS.Time_Submitted" +
+                                         ",CREDENTIALS.Time_Approved" +
+                                         ",CREDENTIALS.Time_Due" +
                                          " FROM VEHICLE_OWNER INNER JOIN " +
-                                         "CREDENTIALS ON VEHICLE_OWNER.Id_Number = CREDENTIALS.Id_Number " +
-                                         "WHERE CREDENTIALS.Status = '0' ";
+                                         "CREDENTIALS ON VEHICLE_OWNER.Id_Number = CREDENTIALS.Id_Number ";
 
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -81,10 +81,10 @@ namespace ParkingSystem_SSD
                             while (reader.Read())
                             {
                                 i++;
-                                status = reader[5].ToString();
+                                status = reader[4].ToString();
                                 string result = messageStatus(status);
-                                dataGridView1.Rows.Add(i,reader[0].ToString(),reader[1].ToString().ToUpper()+" " + reader[2].ToString().ToUpper(), reader[3].ToString(),reader[4].ToString(),reader[6].ToString(),result);
-                                
+
+                                dataGridView1.Rows.Add(i,reader[0].ToString(),reader[1].ToString().ToUpper()+" " + reader[2].ToString().ToUpper(), reader[3].ToString(),reader[5].ToString(), reader[6].ToString(), reader[7].ToString(), reader[8].ToString(), result);
                             }
                             reader.Close();
                         }
@@ -110,11 +110,15 @@ namespace ParkingSystem_SSD
             }
             else if (string.Equals(status, "1"))
             {
-                status = "ALLOWED ENTRY";
+                status = "Allowed Entry";
             }
             else if (string.Equals(status, "2"))
             {
-                status = "NOT ALLOWED ENTRY";
+                status = "Not Allowed Entry";
+            }
+            else if(string.Equals(status,"3"))
+            {
+                status = "Expired";
             }
             return status;
         }
@@ -123,9 +127,9 @@ namespace ParkingSystem_SSD
         {
             try
             {
-                if (dataGridView1.Columns[e.ColumnIndex].Name == "Delete")
+                if (dataGridView1.Columns[e.ColumnIndex].Name == "Checkbox")
                 {
-                    string id = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                    string id = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
                     viewUserRequirements(id);
                 }
             }
@@ -159,12 +163,14 @@ namespace ParkingSystem_SSD
                                          ",VEHICLE_OWNER.FirstName" +
                                          ",VEHICLE_OWNER.LastName" +
                                          ",VEHICLE_OWNER.Position" +
-                                         ",CREDENTIALS.Vehicle_Type" +
-                                         ",CREDENTIALS.Status " +
-                                         ",CREDENTIALS.PlateID " +
+                                         ",CREDENTIALS.Status" +
+                                         ",CREDENTIALS.PlateID" +
+                                         ",CREDENTIALS.Time_Submitted" +
+                                         ",CREDENTIALS.Time_Approved" +
+                                         ",CREDENTIALS.Time_Due" +
                                          " FROM VEHICLE_OWNER INNER JOIN " +
                                          "CREDENTIALS ON VEHICLE_OWNER.Id_Number = CREDENTIALS.Id_Number " +
-                                         "WHERE CREDENTIALS.Status = '" + data + "' ";
+                                         "WHERE CREDENTIALS.Status = '"+data+"' ";
 
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -178,10 +184,10 @@ namespace ParkingSystem_SSD
                             while (reader.Read())
                             {
                                 i++;
-                                status = reader[5].ToString();
+                                status = reader[4].ToString();
                                 string result = messageStatus(status);
-                                dataGridView1.Rows.Add(i, reader[0].ToString(), reader[1].ToString().ToUpper() + " " + reader[2].ToString().ToUpper(), reader[3].ToString(), reader[4].ToString(), reader[6].ToString(), result);
-
+                                dataGridView1.Rows.Add(i, reader[0].ToString(), reader[1].ToString().ToUpper() + " " + reader[2].ToString().ToUpper(), reader[3].ToString(), reader[5].ToString(), reader[6].ToString(), reader[7].ToString(), reader[8].ToString(), result);
+                                
                             }
                             reader.Close();
                         }
@@ -204,14 +210,19 @@ namespace ParkingSystem_SSD
             {
                 filterData("0");
             }
-            else if (string.Equals(cmbFilterStatus.Text.ToString(), "ALLOWED ENTRY"))
+            else if (string.Equals(cmbFilterStatus.Text.ToString(), "Allowed Entry"))
             {
                 filterData("1");
             }
-            else if (string.Equals(cmbFilterStatus.Text.ToString(), "NOT ALLOWED ENTRY"))
+            else if (string.Equals(cmbFilterStatus.Text.ToString(), "Not Allowed Entry"))
             {
                 filterData("2");
             }
+            else if (string.Equals(cmbFilterStatus.Text.ToString(), "Expired"))
+            {
+                filterData("3");
+            }
         }
+
     }
 }

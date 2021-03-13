@@ -41,5 +41,9 @@ namespace ParkingSystem_SSD
             FrmMainMenu menu = new FrmMainMenu();
             menu.Show();
         }
+        private void FrmSG_Menu_Load(object sender, EventArgs e)
+        {
+            lblGuardOnDuty.Text = "SGT." + User.lastname.ToUpper();
+        }
     }
 }

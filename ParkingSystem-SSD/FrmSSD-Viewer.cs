@@ -18,10 +18,11 @@ namespace ParkingSystem_SSD
         {
             InitializeComponent();
         }
-
-        public FrmViewer(int id)
+        public string plateID = string.Empty;
+        public FrmViewer(int id, string plateID)
         {
             User.theOption = id;
+            this.plateID = plateID;
             InitializeComponent();
         }
 
@@ -46,7 +47,7 @@ namespace ParkingSystem_SSD
                 try
                 {
                     conn.Open();
-                    string query = "SELECT* FROM CREDENTIALS WHERE PlateID = '" + User.theID + "' ";
+                    string query = "SELECT* FROM CREDENTIALS WHERE PlateID = '" + plateID + "' ";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
@@ -68,7 +69,7 @@ namespace ParkingSystem_SSD
                         }
                         else
                         {
-                            MessageBox.Show("Id Number does not exist!");
+                            MessageBox.Show("Cannot find image!");
 
                         }
                         conn.Close();
@@ -93,7 +94,7 @@ namespace ParkingSystem_SSD
                 try
                 {
                     conn.Open();
-                    string query = "SELECT* FROM CREDENTIALS WHERE PlateID = '" + User.theID + "' ";
+                    string query = "SELECT* FROM CREDENTIALS WHERE PlateID = '" + plateID + "' ";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
@@ -115,7 +116,7 @@ namespace ParkingSystem_SSD
                         }
                         else
                         {
-                            MessageBox.Show("Id Number does not exist!");
+                            MessageBox.Show("Cannot find image!");
 
                         }
                         conn.Close();
