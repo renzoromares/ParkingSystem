@@ -130,3 +130,4 @@ E:\Study Area\Project Design\90% Back-up\ParkingSystem-RRJ\ParkingSystem-SSD\obj
 E:\Study Area\Project Design\90% Back-up\ParkingSystem-RRJ\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmSSD_UpdateVehiclePass.resources
 E:\Study Area\Project Design\90% Back-up\ParkingSystem-RRJ\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmGuest_UpdateAccount.resources
 E:\Study Area\Project Design\90% Back-up\ParkingSystem-RRJ\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmGuest_UpdateVehiclePass.resources
+E:\Study Area\Project Design\90% Back-up\ParkingSystem-RRJ\ParkingSystem-SSD\obj\Debug\ParkingSystem_SSD.FrmSG_ViewParkingSpace.resources

@@ -32,7 +32,8 @@ namespace ParkingSystem_SSD
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            validateLevel1();
+             validateLevel1();
+            
         }
 
         private void validateLevel1()
@@ -84,7 +85,7 @@ namespace ParkingSystem_SSD
                         else
                         {
                             conn.Close();
-                            MessageBox.Show("Account don't Exist!");
+                            MessageBox.Show("Username or password is incorrect!");
                         }
                     }
                 }

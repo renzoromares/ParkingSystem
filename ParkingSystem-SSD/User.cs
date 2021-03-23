@@ -22,6 +22,7 @@ namespace ParkingSystem_SSD
         public static string username = "usjrssd";
         public static string password = "usjrssd";
         public static string lastname = string.Empty;
+        public static bool isLogout = false;
        
     }
 }

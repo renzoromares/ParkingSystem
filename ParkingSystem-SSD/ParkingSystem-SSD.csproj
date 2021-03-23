@@ -70,6 +70,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionString.cs" />
+    <Compile Include="FrmSG-ViewParkingSpace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSG-ViewParkingSpace.Designer.cs">
+      <DependentUpon>FrmSG-ViewParkingSpace.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGuest-UpdateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +235,9 @@
     <Compile Include="User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmSG-ViewParkingSpace.resx">
+      <DependentUpon>FrmSG-ViewParkingSpace.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGuest-AddVehicle.resx">
       <DependentUpon>FrmGuest-AddVehicle.cs</DependentUpon>
     </EmbeddedResource>

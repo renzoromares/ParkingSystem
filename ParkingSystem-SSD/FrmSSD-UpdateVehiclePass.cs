@@ -147,7 +147,7 @@ namespace ParkingSystem_SSD
                 count++;
                 save2CredentialORUpdate();
             }
-            if (!string.Equals(txtOfficialReceipt.Text, "") && !string.Equals(txtOfficialReceipt.Text, tempString))
+            if (!string.Equals(txtCR.Text, "") && !string.Equals(txtCR.Text, tempString))
             {
                 count++;
                 save2CredentialCR();

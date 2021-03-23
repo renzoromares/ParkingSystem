@@ -95,7 +95,7 @@ namespace ParkingSystem_SSD
                         else
                         {
                             conn.Close();
-                            MessageBox.Show("Account don't Exist!");
+                            MessageBox.Show("Username or password is incorrect!");
                         }
                     }
                 }

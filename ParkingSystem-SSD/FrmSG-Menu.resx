@@ -118,6 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnParkingSpace.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAADvSURBVFhH7ZWxDcIwEEVDzRh0MAYFA0DBMkxARoFNaClp
+        SEGcQOuzU3CcpUMIy5DYgQQhP+lXd/n3ZTt2EonUAVBgA1WkTKliK6WYI+KAP2+PNaiRKMhOKTFii3a4
+        BjTUWevThG3CcRj76ICYD9kqDIepp8oVW4XhMqX9TaUsFg+VS6XKNdXA7iVlbBWGwxDNUC4/AZBPqX61
+        +7W+jLnFH9vM6FUAA4DY2/20YjMu+2ObGf1sgM62wH0IRUq1bg6hn77wG3qo14uIruIWe3/HYVyrPh4j
+        8xwfafCmk+f43T3wcWKAGCAG6D1A5M9JkhvBcjp/mXlUHwAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="btnRecords.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL

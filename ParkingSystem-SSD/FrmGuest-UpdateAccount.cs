@@ -135,11 +135,11 @@ namespace ParkingSystem_SSD
         {
 
             bool checker = false;
-            if (!string.Equals(txtfname.Text, "") || !string.Equals(txtfname.Text, "First Name"))
+            if (!string.Equals(txtfname.Text, "") && !string.Equals(txtfname.Text, "First Name"))
             {
-                if (!string.Equals(txtlname.Text, "") || !string.Equals(txtlname.Text, "Surname"))
+                if (!string.Equals(txtlname.Text, "") && !string.Equals(txtlname.Text, "Surname"))
                 {
-                    if (!string.Equals(txtDepartment.Text, "") || !string.Equals(txtDepartment.Text, "Department"))
+                    if (!string.Equals(txtDepartment.Text, "") && !string.Equals(txtDepartment.Text, "Department"))
                     {
                         if (!string.Equals(txtContact.Text, "") && txtContact.Text.Length == 10)
                         {

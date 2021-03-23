@@ -36,12 +36,21 @@ namespace ParkingSystem_SSD
                     if (string.Equals(User.status, "Student") && registeredVehicle() == true)
                     {
                         save2Credential();
+                        encode();
+                        refresh();
+                        MessageBox.Show("Registration Successful!");
+                    }
+                    else if (string.Equals(User.status, "Staff"))
+                    {
+                        save2Credential();
+                        encode();
                         refresh();
                         MessageBox.Show("Registration Successful!");
                     }
                     else if (string.Equals(User.status, "Faculty"))
                     {
                         save2Credential();
+                        encode();
                         refresh();
                         MessageBox.Show("Registration Successful!");
                     }
@@ -60,6 +69,28 @@ namespace ParkingSystem_SSD
             else
             {
                 MessageBox.Show(" Please Complete Registration");
+            }
+        }
+
+        public void encode()
+        {
+            System.Diagnostics.ProcessStartInfo start = new System.Diagnostics.ProcessStartInfo();
+            start.FileName = @"E:\Encoding\venv\Scripts\python.exe";
+            start.Arguments = string.Format("{0} {1} {2}", @"E:\Encoding\main.py", txtFaceImage.Text, User.ownerID);
+            start.UseShellExecute = false;
+            start.CreateNoWindow = true;
+            start.RedirectStandardOutput = true;
+            start.RedirectStandardError = true;
+            start.LoadUserProfile = true;
+            using (System.Diagnostics.Process process = System.Diagnostics.Process.Start(start))
+            {
+                using (StreamReader reader = process.StandardOutput)
+                {
+                    string stderr = process.StandardError.ReadToEnd();
+                    string result = reader.ReadToEnd();
+                    Console.WriteLine(result);
+                    Console.WriteLine(stderr);
+                }
             }
         }
 

@@ -19,6 +19,10 @@ namespace ParkingSystem_SSD
         {
             InitializeComponent();
         }
+        public FrmSG_ParkingSpace(int val)
+        {
+            InitializeComponent();
+        }
 
         private void FrmSG_ParkingSpace_Load(object sender, EventArgs e)
         {
@@ -52,10 +56,6 @@ namespace ParkingSystem_SSD
                                 checkifEXpired(ID, plateID, expiryDate);
                             }
                             reader.Close();
-                        }
-                        else
-                        {
-                            MessageBox.Show("WALA");
                         }
                         conn.Close();
                     }
@@ -142,6 +142,7 @@ namespace ParkingSystem_SSD
                         btnCarFaculty.Text = emp_car.ToString();
                         btnMotorFaculty.Text = emp_motor.ToString();
                         btnStudentMotor.Text = stu_motor.ToString();
+                        
                     }
                     reader.Close();
                 }
@@ -161,13 +162,14 @@ namespace ParkingSystem_SSD
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
-            
+             Environment.Exit(0);
         }
 
        
         private void btnMainmenu_Click(object sender, EventArgs e)
         {
+
+
             Form form = Application.OpenForms["FrmMainMenu"];
             if (form != null)
             {
@@ -179,6 +181,8 @@ namespace ParkingSystem_SSD
                 FrmMainMenu mainMenu = new FrmMainMenu();
                 mainMenu.Show();
             }
+            
+           
         }
 
     }

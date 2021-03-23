@@ -41,6 +41,7 @@ namespace ParkingSystem_SSD
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.btnParkingSpace = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlSide.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,6 +61,7 @@ namespace ParkingSystem_SSD
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Controls.Add(this.btnParkingSpace);
             this.flowLayoutPanel1.Controls.Add(this.btnRecords);
             this.flowLayoutPanel1.Controls.Add(this.btnSearchAcc);
             this.flowLayoutPanel1.Controls.Add(this.btnLogout);
@@ -89,7 +91,7 @@ namespace ParkingSystem_SSD
             this.btnRecords.IconVisible = true;
             this.btnRecords.IconZoom = 50D;
             this.btnRecords.IsTab = false;
-            this.btnRecords.Location = new System.Drawing.Point(3, 3);
+            this.btnRecords.Location = new System.Drawing.Point(3, 68);
             this.btnRecords.Name = "btnRecords";
             this.btnRecords.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.btnRecords.OnHovercolor = System.Drawing.Color.Transparent;
@@ -124,7 +126,7 @@ namespace ParkingSystem_SSD
             this.btnSearchAcc.IconVisible = true;
             this.btnSearchAcc.IconZoom = 50D;
             this.btnSearchAcc.IsTab = false;
-            this.btnSearchAcc.Location = new System.Drawing.Point(3, 68);
+            this.btnSearchAcc.Location = new System.Drawing.Point(3, 133);
             this.btnSearchAcc.Name = "btnSearchAcc";
             this.btnSearchAcc.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.btnSearchAcc.OnHovercolor = System.Drawing.Color.Transparent;
@@ -159,7 +161,7 @@ namespace ParkingSystem_SSD
             this.btnLogout.IconVisible = true;
             this.btnLogout.IconZoom = 50D;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(3, 133);
+            this.btnLogout.Location = new System.Drawing.Point(3, 198);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
             this.btnLogout.OnHovercolor = System.Drawing.Color.Transparent;
@@ -220,6 +222,41 @@ namespace ParkingSystem_SSD
             this.bunifuDragControl1.TargetControl = this.mainPanel;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // btnParkingSpace
+            // 
+            this.btnParkingSpace.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(181)))), ((int)(((byte)(49)))));
+            this.btnParkingSpace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
+            this.btnParkingSpace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnParkingSpace.BorderRadius = 0;
+            this.btnParkingSpace.ButtonText = "Parking Space";
+            this.btnParkingSpace.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnParkingSpace.DisabledColor = System.Drawing.Color.Gray;
+            this.btnParkingSpace.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnParkingSpace.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnParkingSpace.Iconimage")));
+            this.btnParkingSpace.Iconimage_right = null;
+            this.btnParkingSpace.Iconimage_right_Selected = null;
+            this.btnParkingSpace.Iconimage_Selected = null;
+            this.btnParkingSpace.IconMarginLeft = 0;
+            this.btnParkingSpace.IconMarginRight = 0;
+            this.btnParkingSpace.IconRightVisible = true;
+            this.btnParkingSpace.IconRightZoom = 0D;
+            this.btnParkingSpace.IconVisible = true;
+            this.btnParkingSpace.IconZoom = 50D;
+            this.btnParkingSpace.IsTab = false;
+            this.btnParkingSpace.Location = new System.Drawing.Point(3, 3);
+            this.btnParkingSpace.Name = "btnParkingSpace";
+            this.btnParkingSpace.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(15)))));
+            this.btnParkingSpace.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btnParkingSpace.OnHoverTextColor = System.Drawing.Color.Yellow;
+            this.btnParkingSpace.selected = false;
+            this.btnParkingSpace.Size = new System.Drawing.Size(174, 59);
+            this.btnParkingSpace.TabIndex = 5;
+            this.btnParkingSpace.Text = "Parking Space";
+            this.btnParkingSpace.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnParkingSpace.Textcolor = System.Drawing.Color.Linen;
+            this.btnParkingSpace.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnParkingSpace.Click += new System.EventHandler(this.btnParkingSpace_Click);
+            // 
             // FrmSG_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,5 +289,6 @@ namespace ParkingSystem_SSD
         public System.Windows.Forms.Panel mainPanel;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnParkingSpace;
     }
 }
